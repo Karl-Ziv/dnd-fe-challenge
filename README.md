@@ -1,6 +1,8 @@
 Author: Karl Zivkovic
 
-Deployed Version: https://dnd-fe-challenge.netlify.app/
+Author Website: https://karlzivkovic.netlify.app
+
+Deployed Version: https://dnd-fe-challenge.netlify.app
 
 ### `yarn build`
 
