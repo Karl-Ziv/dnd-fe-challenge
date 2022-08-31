@@ -1,0 +1,204 @@
+:root{
+  --text-color: #F5F3F4;
+  --primary-color: #161A1D;
+  --secondary-color: #660708;
+  --tertiary-color: #BA181B;
+  --other-color: #220901;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quattrocento&display=swap');
+
+.App {
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.html{
+  background-color: var(--primary-color);
+}
+
+h1{
+  color: var(--tertiary-color);
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Quattrocento', serif;
+}
+
+/* Nav */
+.navContainer{
+  position:relative;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+ }
+
+.mobileNav{
+  z-index: 200;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileNav a{
+  color: var(--text-color);
+  font-size: 20px;
+  width: 100%;
+  font-weight: 800;
+  text-decoration: none;
+  margin: 15px 0px;
+}
+
+.mobileNav a:hover{
+  opacity: 0.8;
+}
+
+.mobileNav a:focus{
+  display: none;
+}
+
+.bm-cross-button{
+  transform: scale(1.5);
+}
+
+.background{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.logo{
+  width:30%;
+  max-width: 250px;
+  min-width: 150px;
+  position: absolute;
+  left: 25px;
+  top: 25px
+}
+
+/* Page Containers */
+.homeContainer{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.spellsContainer{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+}
+
+.moreInfoContainer{
+  background-color: var(--primary-color);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.homeButton{
+  position: absolute !important; 
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  padding: 0;
+  transform:translate(-50%, -50%); 
+  color: var(--other-color) !important;
+  font-weight: 800 !important;
+  border: 2px solid !important;
+  padding: 20px 30px !important;
+  box-shadow: -5px 5px 50px black;
+}
+
+/* Spell List Items */
+
+.spellItemsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px 35px;
+}
+
+.spellName{
+  width: 80%;
+  max-width: 80%;
+}
+
+.spellName:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.spellListItem{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.spellItem{
+  flex:1;
+  width: 30%;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--other-color);
+  border-radius: 25px;
+}
+.faveIcon:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.noFaveText{
+  padding-bottom: 30px;
+}
+
+
+.loadMoreButton{
+  margin: 15px !important;
+  color: var(--tertiary-color) !important;
+  font-weight: 400 !important;
+  border: 1px solid !important;
+  padding: 10px 30px !important;
+} 
+
+/* More Info */
+.spellCard{
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  width: 80%;
+  margin: auto;
+  padding: 25px 0px;
+}
+
+.spellCard p{
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+.spellItemTitle{
+  color:var(--tertiary-color);
+}
+
+.loading{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+
+@media screen and (max-width: 600px ){
+  h1 {
+    margin-top: 40px;
+  }
+}
+
+
